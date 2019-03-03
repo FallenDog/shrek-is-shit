@@ -9,19 +9,21 @@
 
 
     <Grid>
-        
-        <ListBox Name="games" Grid.ColumnSpan="2">
-            <ListBoxItem>
-                <StackPanel>
-                    <TextBlock Text="{Binding Name}" HorizontalAlignment="Center"></TextBlock>
-                    <TextBlock Text="{Binding Developer}" HorizontalAlignment="Center"></TextBlock>
-                    <TextBlock Text="{Binding General}" HorizontalAlignment="Center"></TextBlock>
+        <ListBox x:Name="Games" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock FontSize="16" Text="{Binding Path=Name}" HorizontalAlignment="Center" />
+                        <TextBlock FontSize="16" Text="{Binding Path=General}" HorizontalAlignment="Center" />
+                        <TextBlock FontSize="16" Text="{Binding Path=Developer}" HorizontalAlignment="Center" />
 
-                </StackPanel>
-            </ListBoxItem>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
+
+
     </Grid>
-         
             
 
 
