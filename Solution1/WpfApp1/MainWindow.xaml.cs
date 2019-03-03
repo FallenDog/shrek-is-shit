@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Models;
 
 namespace WpfApp1
 {
@@ -20,9 +21,41 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<GameViewModel> Games = new List<GameViewModel>();
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = Games;
+          
+            Games.Add(new GameViewModel()
+            {
+                Name = "Metro Exodus",
+                Developer = "whoes",
+                General = "shuter",
+
+            });
+            Games.Add(new GameViewModel()
+            {
+                Name = "Fallaut New Vegas",
+                Developer = "Obsidian",
+                General = "Rpg",
+
+            }); Games.Add(new GameViewModel()
+            {
+                Name = "Skyrim",
+                Developer = "Bethesda",
+                General = "Rpg",
+
+            }); Games.Add(new GameViewModel()
+            {
+                Name = "Red Alert",
+                Developer = "Ea",
+                General = "Strattegi",
+
+            });
+
+
+
         }
     }
 }
