@@ -6,16 +6,23 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition> 
-            <RowDefinition></RowDefinition> 
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+  
 
 
-    </Grid>
+        <ListBox Name="games" Grid.ColumnSpan="2">
+            <ListBoxItem>
+                <StackPanel>
+                    <TextBlock Text="{Binding Name}" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="{Binding Developer}" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Text="{Binding General}" HorizontalAlignment="Center"></TextBlock>
+
+                </StackPanel>
+            </ListBoxItem>
+         
+            
+
+        </ListBox>
+
+
+ 
 </Window>
