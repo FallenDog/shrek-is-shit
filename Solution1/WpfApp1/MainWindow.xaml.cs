@@ -36,7 +36,7 @@ namespace WpfApp1
             });
             Games.Add(new GameViewModel()
             {
-                Name = "Fallaut New Vegas",
+                Name = "Fallout New Vegas",
                 Developer = "Obsidian",
                 General = "Rpg",
 

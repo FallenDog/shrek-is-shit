@@ -9,7 +9,7 @@
 
 
     <Grid>
-        <ListBox x:Name="Games" >
+        <ListBox Name="Games" >
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="5">
