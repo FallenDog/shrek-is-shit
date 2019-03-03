@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-  
 
 
+    <Grid>
+        
         <ListBox Name="games" Grid.ColumnSpan="2">
             <ListBoxItem>
                 <StackPanel>
@@ -18,10 +19,11 @@
 
                 </StackPanel>
             </ListBoxItem>
+        </ListBox>
+    </Grid>
          
             
 
-        </ListBox>
 
 
  
